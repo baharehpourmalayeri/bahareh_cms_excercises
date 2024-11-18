@@ -1,0 +1,159 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+.homepage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.homepage main {
+  flex-grow: 1;
+}
+.homepage h1 {
+  margin: 5px;
+}
+.homepage h3 {
+  margin: 5px;
+}
+.homepage .form {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.form input {
+  border-radius: 8px;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+}
+.form button {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: rgb(217, 217, 217);
+  border: none;
+  margin: 5px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header nav {
+  background-color: rgb(35, 40, 58);
+  padding: 20px;
+  margin: 0 auto;
+}
+.header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.header ul li {
+  list-style: none;
+}
+.header ul li a {
+  text-decoration: none;
+  color: rgb(220, 214, 204);
+}
+.header li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: rgba(135, 158, 165, 0.709);
+}
+.date .form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.date main {
+  flex-grow: 1;
+}
+.date h1 {
+  text-align: center;
+}
+.content p {
+  text-align: center;
+  margin: 2px;
+}
+.table {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: rgba(135, 158, 165, 0.709);
+}
+.table .form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.table main {
+  flex-grow: 1;
+}
+.table-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.table-content ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: rgba(135, 158, 165, 0.709);
+}
+
+.calculator main {
+  flex-grow: 1;
+}
+.calculator h1 {
+  text-align: center;
+}
+.calculator p {
+  text-align: center;
+}
+.calculator .calc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.calculator .calc input {
+  padding: 10px;
+  margin: 5px;
+  width: 30%;
+  border-radius: 8px;
+  border: none;
+}
+.calculator .calc button {
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: rgb(35, 40, 58);
+  text-align: center;
+  color: rgb(220, 214, 204);
+}
