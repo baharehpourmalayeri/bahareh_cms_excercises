@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News Website</title>
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/pages/home.css">
+  <link rel="stylesheet" href="./css/pages/home.css?1">
 </head>
 <body>
 <?php include 'includes/header.php'; ?>
@@ -22,7 +22,7 @@ $popularNews = array_rand($newsArray, 2);
               <img class="image" src="../images/<?php echo $newsArray[$newsKey]['image']; ?>" alt="<?php echo $news['title']; ?>" />
               <div class="text-container">
               <h3><a href="./pages/single-news.php?id=<?php echo $newsArray[$newsKey]['id']; ?>"><?php echo $newsArray[$newsKey]["title"] ?></a></h3>
-              <p><?php echo $newsArray[$newsKey]['description']; ?></p>
+              <p><?php echo shortenTheText($newsArray[$newsKey]['description'], 30); ?></p>
               <p class="date"><b>Published: </b><?php echo $newsArray[$newsKey]['publication_date']; ?></p>
               </div>
               </div>

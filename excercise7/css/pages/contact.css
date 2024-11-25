@@ -1,0 +1,28 @@
+.form-container {
+  width: 50%;
+  margin: 50px auto;
+}
+.contact-us {
+  margin-top: 50px;
+}
+.contact-us p {
+  text-align: center;
+}
+
+.connection-alts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.contacts ul li {
+  list-style: none;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}

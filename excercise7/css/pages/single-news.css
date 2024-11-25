@@ -1,9 +1,21 @@
-.image{
+body{
+  background-color: rgb(212, 212, 245);
+}
+.single-news-page{
   display: flex;
-  width: 100%;
-  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px;
+}
+.image{
+  width: 50%;
+  border-radius: 20px;
  }
-
- body{
-  min-height: 100vh;
- }
+.single-news-page p{
+ width: 50%;
+}
+.article{
+  font-size: 25px;
+}

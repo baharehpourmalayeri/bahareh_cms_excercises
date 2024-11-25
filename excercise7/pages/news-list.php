@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News Website</title>
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/pages/news-list.css">
+  <link rel="stylesheet" href="../css/pages/news-list.css?1">
 </head>
 <body>
 <?php include '../includes/header.php'; ?>
@@ -20,8 +20,7 @@ if (isset($_GET['category'])){
     }
 }
 ?>
-<main>
-    <?php
+<?php
     if(isset($_GET['category'])){ ?>
         <h1>All <?php echo $_GET['category']; ?> News</h1>
         <?php
@@ -30,13 +29,16 @@ if (isset($_GET['category'])){
         <?php
     }
     ?>
+<main class="news-container">
     <section class="news-list">
         <?php foreach ($availableNews as $news) { ?>
         <article>
             <h2><a href="./single-news.php?id=<?php echo $news['id'] ?>"><?php echo $news['title'] ?></a></h2>
-            <p><?php echo $news['description'] ?></p>
+            <p><strong>Published on:</strong><?php echo $news['publication_date']; ?> | <strong>Category:</strong><?php echo $news['category']; ?> | <strong>Author:</strong><?php echo $news['author']; ?></p>
+            <div class="news-content">
             <img class="image" src="../images/<?php echo $news['image']; ?>" alt="<?php echo $news['title']; ?>" />
-            <p><strong>Published on:</strong><?php echo $news['publication_date']; ?> | <strong>Category:</strong><?php echo $news['category']; ?></p>
+            <p class="description"><?php echo shortenTheText($news['description'], 50); ?> </p>
+            </div>
         </article>
         <?php } ?>
     </section>
