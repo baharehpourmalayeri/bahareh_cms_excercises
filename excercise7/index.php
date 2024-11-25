@@ -9,26 +9,32 @@
 </head>
 <body>
 <?php include 'includes/header.php'; ?>
-
+<?php
+$popularNews = array_rand($newsArray, 2);
+?>
     <main class="homepage">
         <h1>Popular</h1>
         <div class="content">
-          <div class="popular-news">
-            <div>
-              <h3></h3>
-              <p></p>
-              
-
+          <div class="popular-news-section">
+            <?php foreach ($popularNews as $newsKey) { ?>
+            <div class="popular-news-container">
+              <div class="popular-news">
+              <img class="image" src="../images/<?php echo $newsArray[$newsKey]['image']; ?>" alt="<?php echo $news['title']; ?>" />
+              <div class="text-container">
+              <h3><a href="./pages/single-news.php?id=<?php echo $newsArray[$newsKey]['id']; ?>"><?php echo $newsArray[$newsKey]["title"] ?></a></h3>
+              <p><?php echo $newsArray[$newsKey]['description']; ?></p>
+              <p class="date"><b>Published: </b><?php echo $newsArray[$newsKey]['publication_date']; ?></p>
+              </div>
+              </div>
             </div>
-            <p>2</p>
-            <p>3</p>
+            <?php } ?>
           </div>
           <div class="categories">
-            <p>a</p>
-            <p>b</p>
-            <p>c</p>
+            <h4>Categories</h4>
+          <?php foreach ($categories as $cat) { ?>
+            <ul><li><a href="/pages/news-list.php?category=<?php echo $cat; ?>"><?php echo $cat; ?></a></li></ul>
+            <?php } ?>
           </div>
-        </div>
     </main>
 
     <?php include 'includes/footer.php'; ?>
