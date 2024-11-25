@@ -1,29 +1,59 @@
+html, body {
+  overflow: auto;
+  min-height: 100%;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
 header {
-  background-color: #333;
+  background-color: #120c4a;
   color: white;
-  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+}
+header nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 header nav ul {
+  display: flex;
+  flex-direction: row;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 header nav ul li {
-  display: inline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 header nav ul li a {
   color: white;
   text-decoration: none;
 }
+header a .logo {
+  height: 100px;
+  width: 100px;
+}
 footer {
-  background-color: #333;
+  background-color: #120c4a;
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -31,10 +61,3 @@ footer {
   bottom: 0;
   width: 100%;
 }
-main {
-  padding: 20px;
-}
-.news-item {
-  margin-bottom: 20px;
-}
-
