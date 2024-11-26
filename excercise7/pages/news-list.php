@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News Website</title>
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/pages/news-list.css?1">
+  <link rel="stylesheet" href="../css/styles.css?3">
+  <link rel="stylesheet" href="../css/pages/news-list.css?6">
 </head>
 <body>
 <?php include '../includes/header.php'; ?>

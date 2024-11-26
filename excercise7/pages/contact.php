@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News Website</title>
-  <link rel="stylesheet" href="../css/styles.css?1">
-  <link rel="stylesheet" href="../css/pages/contact.css?2">
+  <link rel="stylesheet" href="../css/styles.css?4">
+  <link rel="stylesheet" href="../css/pages/contact.css?8">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-
+<?php include '../includes/header.php'; ?>
 <main class="contact-page">
-    <?php include '../includes/header.php'; ?>
     <section class="contact-us">
         <p>We’d love to hear from you! Whether you have a question, suggestion, or feedback, feel free to reach out to us using the contact form below.</p>
 
@@ -37,7 +36,7 @@
             </div>
         <div class="connection-alts">
         <div class="contacts">
-        <h2>Other Ways to Reach Us</h2>
+        <h4>Other Ways to Reach Us</h4>
         <ul>
             <li><strong>Phone:</strong> +46 8 888 999 11</li>
             <li><strong>Email:</strong> <a href="mailto:support@nextnews.com">support@nextnews.com</a></li>
@@ -69,7 +68,7 @@
         </ul>
         </div>
         <div class="address">
-        <h2>Office Location</h2>
+        <h4>Office Location</h4>
         <address>
             <strong>Next News Headquarters</strong><br>
             Nyhetsvägen 123<br>

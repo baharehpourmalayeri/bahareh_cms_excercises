@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News Website</title>
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/pages/home.css?1">
+  <link rel="stylesheet" href="./css/styles.css?1">
+  <link rel="stylesheet" href="./css/pages/home.css?7">
 </head>
 <body>
 <?php include 'includes/header.php'; ?>
@@ -31,9 +31,11 @@ $popularNews = array_rand($newsArray, 2);
           </div>
           <div class="categories">
             <h4>Categories</h4>
-          <?php foreach ($categories as $cat) { ?>
-            <ul><li><a href="/pages/news-list.php?category=<?php echo $cat; ?>"><?php echo $cat; ?></a></li></ul>
+            <ul>
+            <?php foreach ($categories as $cat) { ?>
+            <li><a href="/pages/news-list.php?category=<?php echo $cat; ?>"><?php echo $cat; ?></a></li>
             <?php } ?>
+            </ul>
           </div>
     </main>
 
