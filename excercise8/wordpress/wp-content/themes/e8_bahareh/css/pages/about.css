@@ -1,0 +1,20 @@
+
+.about-page {
+  margin: 1.25rem;
+}
+
+.company-photo {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .about-page {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    margin: 0.625rem;
+  }
+}

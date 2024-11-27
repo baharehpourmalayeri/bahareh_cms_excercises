@@ -19,7 +19,7 @@ $popularNews = array_rand($newsArray, 2);
             <?php foreach ($popularNews as $newsKey) { ?>
             <div class="popular-news-container">
               <div class="popular-news">
-              <img class="image" src="../images/<?php echo $newsArray[$newsKey]['image']; ?>" alt="<?php echo $news['title']; ?>" />
+              <img class="image" src="images/<?php echo $newsArray[$newsKey]['image']; ?>" alt="<?php echo $newsArray[$newsKey]['title']; ?>" />
               <div class="text-container">
               <h3><a href="./pages/single-news.php?id=<?php echo $newsArray[$newsKey]['id']; ?>"><?php echo $newsArray[$newsKey]["title"] ?></a></h3>
               <p><?php echo shortenTheText($newsArray[$newsKey]['description'], 30); ?></p>

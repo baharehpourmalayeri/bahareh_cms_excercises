@@ -1,0 +1,10 @@
+excercise8/wordpress/*
+
+!excercise8/wordpress/wp-content/
+
+excercise8/wordpress/wp-content/*
+!excercise8/wordpress/wp-content/themes/
+
+excercise8/wordpress/wp-content/themes/*
+
+!excercise8/wordpress/wp-content/themes/e8_bahareh/
