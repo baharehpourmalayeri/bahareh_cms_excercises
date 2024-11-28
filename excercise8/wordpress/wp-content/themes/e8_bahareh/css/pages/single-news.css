@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(212, 212, 245);
+  background-color: rgb(212, 212, 245) !important;
 }
 
 .single-news-page {
@@ -16,7 +16,7 @@ body {
   border-radius: 1.25rem;
 }
 
-.single-news-page p {
+.single-news-page .p50 {
   width: 50%;
 }
 
@@ -24,7 +24,7 @@ body {
   font-size: 1.5625rem;
 }
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
   .single-news-page {
     margin: 2rem;
   }
