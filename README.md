@@ -1,6 +1,7 @@
-WordPress Custom Theme
+WordPress Custom CMS
 
-This is a custom WordPress theme developed using PHP, HTML, CSS, and JavaScript. It was built from scratch to create a unique and responsive design for a WordPress website.
+This is a custom CMS project built with WordPress. It leverages PHP, HTML, CSS, and JavaScript to provide a dynamic and flexible content management system.
+
 
 🚀 Technologies Used
 
@@ -12,8 +13,8 @@ HTML & CSS – For structuring and styling the theme.
 
 JavaScript – For interactive features.
 
+
 📌 Notes
 
-This project does not include the full WordPress installation, only the custom theme files.
-
-Ensure WordPress is installed before using this theme.
+-This project only includes theme files and does not come with a full WordPress installation.
+-Make sure WordPress is installed before using this CMS project.
